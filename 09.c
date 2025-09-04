@@ -1,11 +1,13 @@
 #include <stdio.h>
 int mian(){
+    //Definir a procedencia do produto de acordo com o codigo de origem
+    //Declaração de variaveis
     float P;
     int CO;
 
     printf("Insira o preco do produto e em seguida seu codigo de origem:\n");
     scanf("%f %f", &P, &CO);
-
+    //Definição da procedencia do produto
     switch (CO)
     {
     case 1:

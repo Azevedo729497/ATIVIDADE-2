@@ -1,10 +1,12 @@
 #include <stdio.h>
 int main(){
+    //Definindo a categotia do nadador por meio de sua idade
+    //Declaração de variavel
     int idade;
 
     printf("Informe sua idade:");
     scanf("%d", &idade);
-
+    //Definindo a idade e a categoria do nadador
     switch (idade)
     {
     case 5:

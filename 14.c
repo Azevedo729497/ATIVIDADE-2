@@ -1,10 +1,12 @@
 #include <stdio.h>
 int main(){
+    //Aumento de salario de acordo com o cargo
+    //Declaração de variaveis
     int cdg;
 
     printf("Informe o codigo do funcionario:\n");
     scanf("%d", &cdg);
-
+    //Definição do aumento de salarioo de acordo com o codigo correspondente ao cargo
     switch (cdg)
     {
     case 1:

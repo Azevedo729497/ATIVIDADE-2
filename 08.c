@@ -1,11 +1,14 @@
 #include <stdio.h>
 int main(){
+    //Declaração de tres notas e a verificação do conceito por meio da media aritmetica das notas
+    //Declaração de variaveis
     int MP, n1, n2, n3;
     printf("Informe sua nota do laboratorio, em seguida da Av. semestral e por fim do exame final:\n");
     scanf("%d %d %d", &n1, &n2, &n3);
-
+    
+    //Claculo da media aritmetica
     MP = (n1*2 + n2*3 + n3*5)/10;
-
+    //Definição do conceito de acordo com a media obtida
     switch (MP)
     {
     case 0:

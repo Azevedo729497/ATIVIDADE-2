@@ -1,5 +1,7 @@
 #include <stdio.h>
 int main(){
+    //Calculo do salario de um funcionario de acordo com as horas trabalhadas, dependentes e a quantidade de horas extras trabalhadas
+    //Declaração de variaveis
     int sal, h, dp, he;
     float ht, salm, salb, vhe, salf, x, y;
 
@@ -10,10 +12,11 @@ int main(){
     printf("Informe a quantidade de horas trabalhadas e em seguida as horas-extras: ");
     scanf("%d %d", &h, &he);
 
-    ht = (sal)/5;
-    salm = h*ht;
-    vhe = 1.5*he*ht;
-    salb = salm + dp*32 + vhe;
+    ht = (sal)/5;//calculo do valor da hora trabalhada
+    salm = h*ht;//Calculo do salario medio
+    vhe = 1.5*he*ht;//valor das horas extras
+    salb = salm + dp*32 + vhe;//calculo do salario bruto
+    //Definição do desconto do IRRF de acordo com o salario bruto
 
     if (salb < 200)
     {

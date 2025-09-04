@@ -1,10 +1,12 @@
 #include <stdio.h>
 int main(){
+    //Deixando tres valores inteiros em ordem crescente. Valores declarados
+    //Declaração de valores
     int n1, n2, n3;
 
     printf("Digite tres valores inteiros:\n");
     scanf("%d %d %d", &n1, &n2, &n3);
-
+    //Intervalos da condições de organização
     if (n1 > n2)
     {
         if (n2 > n3)

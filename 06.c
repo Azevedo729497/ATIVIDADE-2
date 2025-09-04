@@ -1,11 +1,13 @@
 #include <stdio.h>
 int main(){
+    //Calculo do peso ideal tendo como base o sexo e a altura
+    //Declaração de variaveis
     int genero, PI; //Peso ideal(PI)
     float H; //Altura do individuo(H)
 
     printf("Selecione seu genero:\n1 - Masculino\n2 - Feminino\n");
     scanf("%d", &genero);
-
+    //Escolha do genero e declaração do peso
     switch (genero)
     {
     case 1:

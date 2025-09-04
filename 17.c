@@ -1,9 +1,12 @@
 #include <stdio.h>
 int main (){
+    //Localização de um angulo em graus no seu quadrante
+    //Declaração de variaveis
     int ang;
 
     printf("Informe o angulo:");
     scanf("%d", &ang);
+    //Normalização de angulos maiores q 360 graus e menores que -360
     if ((ang > 360))
     {
         ang = ang%360;
@@ -12,7 +15,7 @@ int main (){
     {
         ang = ang%-360;
     }
-
+    //Definição do intervalo onde se localiza o angulo e definir seu quadrante correspondente
     if ((ang >= 0) && (ang < 90))
     {
         printf("Primeiro quadrante");

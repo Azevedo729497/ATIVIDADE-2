@@ -1,9 +1,11 @@
 #include <stdio.h>
 int main(){
+    //Verificando qual animal se trata de acordo com as categorias em que ele pertence
+    //Declaração das variaveis
     int M, A, B;
     printf("Selecione uma opcao:\n1 - Mamiferos;\n2 - Aves;\n3 - Repteis.\n");
     scanf("%i", &M);
-
+    //Realiando a escolha de cada categoria para verificar de qual animal se trata
     switch (M)
     {
     case 1:
@@ -114,36 +116,3 @@ return 0;
 
 
 
-/*case 2 :
-        int A, B;
-        printf("Seleione novamente:\n1 - Nao voadoras;\n2 - Nadadoras;\n3 - eDe rapina.\n");
-        scanf("%i", &A);
-        
-        if (A == 1)
-        {
-            printf("Selecione novamente:\n1 - Tropical;\n2 - Polar.\n");
-            scanf("%i", &B);
-
-            switch (B)
-            {
-            case 1:
-                printf("Avestruz");
-                break;
-            case 2:
-                printf("Pingum");
-                break;
-            
-            default:
-                printf("Valor invalido");
-            return 0;
-            }
-        }
-        if (A == 2)
-        {
-            printf("Pato");
-        }
-        if (A == 3)
-        {
-            printf("Aguia");
-        }
-        */

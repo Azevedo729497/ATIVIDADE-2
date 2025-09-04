@@ -1,5 +1,7 @@
 #include <stdio.h>
 int main(){
+    //Definição do valor do premio de uma empresa de acordo com as horas extra trabalhadas
+    //Declaração de variaveis
     int he, hf;
     float H, HE, HF;
 
@@ -7,10 +9,11 @@ int main(){
     scanf("%d", &he);
     printf("Informe a qtd de horas-faltas(em minutos):\n");
     scanf("%d", &hf);
-
-    HE = he/60;
-    HF = hf/60;
-    H = he - (2*(hf))/3;
+    
+    HE = he/60;//Calculo do valor da hora extra
+    HF = hf/60;//Calculo da hora falta
+    H = he - (2*(hf))/3;//calculo do valor resultante referentes as horas extras
+    //Seleção do valor do premio de acordo com H
 
     if (H > 2400){
         printf("O funcionario possui:\nHora-extra: %.2f\nHora-falta: %.2f\nHoras(em minutos): %.2f\nValor do premio (Dolar): 500", HE, HF, H);

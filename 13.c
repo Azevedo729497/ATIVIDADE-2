@@ -1,10 +1,12 @@
 #include <stdio.h>
 int main(){
+    //Claassificação por idade
+    //Declaração de variaveis
     int id;
 
     printf("Informe a idade para definir a faixa etaria\n");
     scanf("%d", &id);
-
+    //Verificação por intervalo de idade
     if ((id >= 0) && (id <= 2))
     {
         printf("Recem-nascido");

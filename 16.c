@@ -1,17 +1,20 @@
 #include <stdio.h>
 int main(){
+    //Definir o codigo do seguro adequado para o cliente de acordo com sua idade e o risco envolvido na ocupação
+    //Declaração de variaveis
     int id;
     char x, b, m, a;
 
     printf("Informe o grupo de risco do cliente:\nb - Baixo\nm - Medio\na - Alto\n");
     scanf("%c", &x);
-
+    //Definição do grupo de risco
     switch (x)
     {
     case 'b':
+        //declaração da idade
         printf("Agora informe a idade:\n");
         scanf("%d", &id);
-
+        //condição que se encaixa a idade
         if ((id >= 18) && (id <= 24))
         {
             printf("Codigo do cliente: 7");

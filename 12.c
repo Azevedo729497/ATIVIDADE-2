@@ -1,13 +1,15 @@
 #include <stdio.h>
 int main(){
+    //Receber tres notas e calcular a media aritmetica e verificar a situação do aluno
+    //Declaração de variaveis
     int n1, n2, n3;
     float media;
 
     printf("Informe as tres notas do aluno\n");
     scanf("%d %d %d", &n1, &n2, &n3);
-
+    //Caculo de media
     media = (n1 + n2 + n3)/3;
-
+    //Condição da situação do aluno segundo a media
     if ((media <5) && (media >= 0))
     {
         printf("Media =: %.2f\nReprovado", media);

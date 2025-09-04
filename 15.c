@@ -2,24 +2,26 @@
 #include <math.h>
 
 int main(){
+    //Definir um menu para selecionar a soma ou raiz quadrada de dois inteiros declarados pelo usuario
+    //Declaração  de variaveis 
     int a, x, y, z, n;
     float q;
 
     printf("Selecione uma opcao:\n1 - Soma\n2 - Raiz Quadrada\n3 - Finalizar\n");
     scanf("%d", &a);
-
+    //Escolha da operação
     switch (a)
     {
     case 1:
         printf("Informe os valores inteiros para realizar a soma:\n");
         scanf("%d %d", &x, &y);
-        z = x + y;
+        z = x + y;//soma dos elementos
         printf("A soma sera: %d", z);
         break;
     case 2:
         printf("Informe um numero natural para obter sua raiz quadrada:\n");
         scanf("%d", &n);
-        q = sqrt(n);
+        q = sqrt(n);//calculo da raiz quadrada
         printf("A raiz quadrada do valor sera: %.2f", q);
         break;
     case 3:
